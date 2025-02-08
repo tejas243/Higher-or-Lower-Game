@@ -36,12 +36,12 @@ while continue_flag:
     print(f"Compare 2: {display_accountinfo(account_2)}")
 
     guess = int(input("Who has more followers? Type 1 or 2: "))
-    followers_count_1 = account_1["followers_count"]
-    followers_count_2 = account_2["followers_count"]
+    followers_count_1 = account_1["follower_count"]
+    followers_count_2 = account_2["follower_count"]
     is_correct = check_answer(guess, followers_count_1, followers_count_2)
     if is_correct:
         score += 1
-        print("You are right. Your score is: {score}")
+        print(f"You are right. Your score is: {score}")
     else:
         print(f"You are wrong.. your final score is: {score}")
         continue_flag = False
